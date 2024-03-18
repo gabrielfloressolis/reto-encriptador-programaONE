@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    
+    <main>
+
+        <div class="container">
+            
+            <div class="entrada">
+
+                <img class="logo" src="imagenes/Logo.png" alt="Logo Alura">
+    
+                <section class="entrada-texto">
+                    <textarea placeholder="Ingrese texto aquí (solo minúsculas)" id="textoUsuario" required></textarea>
+
+                </section>
+
+                <section class="botones">
+                    <button onclick="verificarTexto(1);">Encriptar</button>
+                    <button onclick="verificarTexto(2);">Desencriptar</button>
+                </section>
+    
+            </div>
+    
+            <div class="resultado">
+                <section class="rectangulo">
+                    <img src="imagenes/cat.png" alt="Gato Confundido" id="imagen">
+                    <p id="texto_inicial">Ningún mensaje fue encontrado</p>
+                    <p id="espacioResultado">Ingresa por favor el texto que desees encriptar o desencriptar</p>
+                </section>
+                <button id="copiar" onclick="copiarContenido();">Copiar</button>
+                
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>Elaborado por Gabriel Antonio Flores Solis - 2024</p>
+    </footer>
+    
+    <script src="encriptador.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body{
+    background: #f3f5fc;
+    font-family: "Madimi One", sans-serif;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+}
+
+.entrada, .resultado{
+    flex: 1;
+    height: 100vh;
+}
+
+.entrada{
+    width: 45%;
+    height: 75vh;
+    display: inline-block;
+    margin: 30px;
+    padding: 20px;
+}
+
+.logo {
+    margin: 5px;
+}
+
+.entrada-texto{
+   
+    height: 50vh;
+    margin-top: 35px;
+}
+
+.entrada-texto textarea{
+    background-color: transparent;
+    width: 95%;
+    height: 95%;
+    padding: 10px;
+    border: none;
+    resize: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5em;
+}
+
+.entrada-texto textarea:focus {
+    outline: none; /* Elimina el borde de enfoque */
+}
+
+.botones{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.botones button{
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.botones button, .resultado button{
+    background: transparent;
+    color: #204969;
+    border-color: #204969;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 400ms ease all;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 20px;
+
+}
+
+
+.botones button:hover, .resultado button:hover{
+    background: #f4c014;
+    color: #204969;
+    border: none;
+    font-weight: bold;
+    border: none;
+    font-size: 1.4em;
+}
+
+
+.resultado{
+    background-color: #FFF7F7;
+    width: 40%;
+    height: 75vh;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+}
+
+.rectangulo{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.rectangulo img{
+    width: 60%;
+}
+
+#texto_inicial{
+    font-size: 1.5em;
+    margin: 20px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+#espacioResultado{
+    font-size: 1em;
+}
+
+.resultado button{
+    display: none;
+    margin: 20px;
+}
+
+
+footer{
+    background-color: #204969;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width:780px) {
+
+    .container{
+        display: inline-block;
+    }
+    .entrada{
+
+        width: 100%;
+        
+    }
+    .resultado{
+
+        height: auto;
+        width: 100%;
+
+    }
+
+    .rectangulo img{
+        display: none;
+    }
+
+
+    #texto_inicial{
+        
+        margin-top: 10px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+}
